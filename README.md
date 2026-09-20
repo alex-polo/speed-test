@@ -1,4 +1,4 @@
-# 🧠 Speed Test
+# Speed Test
 
 ![alt text](docs/image.png)
 

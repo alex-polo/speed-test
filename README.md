@@ -7,6 +7,8 @@
 - Python 3.13+
 - [httpx](https://pypi.org/project/httpx/) (for HTTP requests)
 - [rich](https://pypi.org/project/rich/) (for rich text formatting)
+- [ruff](https://pypi.org/project/ruff/) (for linting)
+- [mypy](https://pypi.org/project/mypy/) (for type checking)
 
 ## Метрики
 
@@ -23,7 +25,6 @@
 
 ```bash
 uv sync
-
 ```
 
 Запуск

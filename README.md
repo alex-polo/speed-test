@@ -39,12 +39,13 @@ source venv/bin/activate # On Windows: venv\Scripts\activate
 
 1. Установка зависимостей requirements.txt
 
-````bash
+```bash
 pip install -r requirements.txt
 ```
+
 
 2. Запуск
 
 ```bash
 python run.py
-````
+```

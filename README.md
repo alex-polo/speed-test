@@ -19,10 +19,14 @@
 
 ### Если вы используете `uv` это ваш путь
 
+Установка
+
 ```bash
 uv sync
 
 ```
+
+Запуск
 
 ```bash
 uv run python run.py
@@ -30,21 +34,20 @@ uv run python run.py
 
 ### Иначе
 
-1. Создание виртуального окружения
+Создание виртуального окружения
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 ```
 
-1. Установка зависимостей requirements.txt
+Установка зависимостей requirements.txt
 
 ```bash
 pip install -r requirements.txt
 ```
 
-
-2. Запуск
+Запуск
 
 ```bash
 python run.py

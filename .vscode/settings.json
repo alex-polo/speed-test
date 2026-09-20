@@ -1,0 +1,153 @@
+{
+  // Режим проверки типов: "basic" - базовая проверка, "strict" - строгая проверка типов
+  "python.analysis.typeCheckingMode": "basic",
+
+  // Автоматически предлагать и добавлять импорты при автодополнении
+  "python.analysis.autoImportCompletions": true,
+
+  // Автоматически добавлять скобки () при автодополнении функций
+  "python.analysis.completeFunctionParens": true,
+
+  // Показывать ошибки для всего проекта (вместо "openFiles" - только для открытых файлов)
+  "python.analysis.diagnosticMode": "workspace",
+
+  // Показывать подсказки с типами переменных прямо в коде
+  "python.analysis.inlayHints.variableTypes": true,
+
+  // Показывать подсказки с типами возвращаемых значений функций
+  "python.analysis.inlayHints.functionReturnTypes": true,
+
+  // Настройки быстрых подсказок автодополнения
+  "editor.quickSuggestions": {
+    "other": true, // Включить в обычном коде
+    "comments": false, // Отключить в комментариях
+    "strings": true // Включить в строках
+  },
+
+  // Настройки Ruff
+  "ruff.enable": true, // Включить Ruff
+  "ruff.lint.enable": true, // Включить линтинг через Ruff
+  "ruff.fixAll": true, // Автоматически исправлять все проблемы
+  "ruff.organizeImports": true, // Автоматически организовывать импорты
+
+  // Общие настройки форматирования
+  "editor.formatOnSave": true, // Форматировать при сохранении, глобальная настройка
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit", // Исправлять все проблемы
+    "source.organizeImports": "explicit" // Организовывать импорты
+  },
+
+  // Установить Prettier как основной форматтер для других языков
+  // Глобальная настройка
+
+  "[python]": {
+    "editor.formatOnSave": true, // Форматировать код при сохранении
+
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll": "explicit", // Исправлять все проблемы
+    //   "source.organizeImports": "explicit" // Организовывать импорты
+    // },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Настройки тестирования Python
+  "python.testing.pytestArgs": ["."], // Аргументы для pytest (текущая директория)
+  "python.testing.unittestEnabled": false, // Отключить unittest
+  "python.testing.pytestEnabled": true, // Включить pytest
+
+  // === ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ PYTHON ===
+
+  // Подсветка неиспользуемых переменных
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnusedVariable": "warning",
+    "reportUnusedImport": "warning"
+  },
+
+  // Показывать мини-карту
+  "editor.minimap.enabled": false,
+
+  // Размер вкладки и отступов
+  //  "editor.tabSize": 4,
+  //  "editor.insertSpaces": true,
+
+  // Рендеринг пробелов
+  // "editor.renderWhitespace": "boundary",
+
+  // Автоматическое закрытие парных элементов
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+
+  // Плавная прокрутка
+  "editor.smoothScrolling": true,
+
+  // Строка статуса внизу
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "blink",
+
+  // === GIT ИНТЕГРАЦИЯ ===
+
+  // Автоматическое обновление git
+  "git.autorefresh": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // Открывать diff в отдельной вкладке
+  "git.openDiffOnClick": true,
+
+  // Автоматические действия при сохранении в Jupyter notebooks
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit" // Исправлять все проблемы автоматически
+  },
+  "python.analysis.extraPaths": ["./backend"],
+  "python-envs.pythonProjects": [
+    {
+      "path": "client/src/shared/ui/notifications",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ],
+  "Codegeex.SidebarUI.LanguagePreference": "English",
+  "Codegeex.RepoIndex": true,
+  "Codegeex.Chat.fontSize": 13
+}
